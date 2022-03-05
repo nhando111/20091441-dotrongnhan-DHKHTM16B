@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Layout demo</title>
+    <link rel="stylesheet" href="css/global.css">
+</head>
+<style>
+   *{
+        padding: 0px;
+        margin: auto;
+    }
+    
+    #wrapper{
+        height: 400px;
+        width: 898px;
+        background-color: aqua;
+    }
+    #header{
+        height: 100px;
+        width: 898px;
+        background-color: rgb(4, 29, 29);
+    }
+    #nav{
+        height: 300px;
+        width: 898px;
+        background-color: rgb(39, 223, 100);  
+    }
+    #menu{
+        height: 300px;
+        width: 150px;
+        background-color: rgb(188, 212, 49);
+        float: left;
+    }
+    #article{
+        width: 748px;
+        height: 300px;
+        background-color: rgb(240, 6, 6);
+        float: right;
+    }
+    #content{
+        height: 240px;
+        width: 648px;
+        background-color: rgb(54, 22, 233);
+        margin-top: 30px;
+        margin-left: 50px;
+        margin-bottom: 30px;
+        margin-right: 50px;
+    }
+
+    #menu ul {
+        background: #8AD385;
+        width: 150px;
+        padding: 0;
+        list-style-type: none;
+        text-align: left;
+        }
+    #a {
+        color: rgb(21, 228, 131);
+        font-weight: bold;
+        font-size: larger;
+        text-decoration: none;
+    }
+    #menu li {
+        width: auto;
+        height: 40px;
+        line-height: 40px;
+        border-bottom: 1px solid #e8e8e8;
+        padding: 0 1em;
+        }
+    #menu ul li {
+        position: relative;
+        }
+    
+    #menu .sub-menu {
+        position: absolute;
+        left: 150px;
+        top: 0;
+        display: none;
+        }
+    #menu li:hover .sub-menu {
+        display: block;
+        }
+    #menu li a {
+        text-decoration: none;
+        color: #333;
+        font-weight: bold;
+        display: block;
+        }
+    #menu li:hover {
+        background: #CDE2CD;
+        }
+    
+
+</style>
+<body>
+    <div id="wrapper">
+        <div id="header"></div>
+        <div id="nav">
+            <div id="menu">
+                <ul>
+                    <li><a href="#">Menu 1</a></li>
+                    <li><a href="#">Menu 2</a>
+                        <ul class="sub-menu">
+                            <li><a href="#">Menu 2.1</a></li>
+                            <li><a href="#">Menu 2.2</a></li>
+                            <li><a href="#">Menu 2.3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">Menu 3</a></li>
+                    <li><a href="#">Menu 4</a></li>
+                </ul>
+            </div>
+            <div id="article">
+                <div id="content"></div>
+            </div>
+                
+        </div>
+
+    </div>
+</body>
