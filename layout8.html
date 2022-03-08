@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: auto;
+            padding: 0px;
+        }
+        body{
+            background-image: url(../img/R.jpg)
+        }
+        .clear{
+            clear: both;
+        }
+        .wrapper{
+            height: 1000px;
+            width: 1089px;
+            background-color: rgb(230, 145, 36);
+        }
+        nav{
+            height: 50px;
+            width: 1089px;
+            background-color: rgb(136, 255, 0);
+        }
+        header{
+            height: 150px;
+            width: 1089px;
+            background-image: url(../img/Untitled.png);
+        }
+        .content{
+            height: 300px;
+            width: 1089px;
+            background-color: rgb(25, 196, 82);
+        }
+        footer{
+            height: 130px;
+            width: 100%;
+            background-color: blueviolet;
+        }
+        aside{
+            height: 100%;
+            width: 40%;
+            background-color: rgb(238, 234, 14);
+            float: left;
+            
+        }
+        section{
+            height: 100%;
+            width: 60%;
+            background-color: rgb(202, 25, 54);
+            float: left;
+        }
+        .menu li{
+            float: left;
+            height: 50px;
+            width: 160px;
+            list-style: none;
+            text-indent: 15px;
+        }
+        a{
+            color: blue;
+            text-decoration: none;
+        }
+        .menu li:hover{
+            background-color: bisque;
+
+        }
+        li:hover{
+            color: rgb(206, 19, 19);
+        }
+        .menu li .submenu{
+            display: none;
+        }
+        .menu li:hover .submenu{
+            display: block;
+        }
+        nav span form #txtEmail{
+            padding: 3px;
+            margin-right: 3px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <nav>
+            <ul class="menu">
+                <li><a href="https://24h.com.vn">HOME</a></li>
+                <li><a href="#">SERVICE</a></li>
+                <li><a href="#">CONTACT</a>
+                    
+                    <ul class="submenu">
+                        <li><a href="">PHONE</a></li>
+                        <li><a href="">INTERNET</a></li>
+                        <li><a href="">TIVI</a></li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">HELP</a></li>
+            </ul>
+            <span>
+                <label for="Email">Email: </label>
+                <form action="dangky.php" method="post">
+                    <input type="email" name="txtEmail" id="txtEmail" placeholder="nhap Email" required>
+                    <input type="submit" value="GO" style="border-radius: 50%;">
+                </form>
+            </span>
+        </nav>
+        <header></header>
+        <div class="clear"></div>
+        <div class="content">
+        <aside>
+            <article>
+                <h1>HOAT DONG 1</h1>
+            </article>
+            <article>
+                <h1>HOAT DONG 2</h1>
+            </article><article>
+                <h1>HOAT DONG 3</h1>
+            </article>
+        </aside>
+        <section>
+            <form action="" method="post">
+                <fieldset>
+                    DANG KI THONG TIN <br>
+                    <legend>thong tin cua ban</legend>
+                    <label for="ib ho ten">Ho Ten :</label>
+                    <input type="text" name="txtHoTen" id="txtHoTen" placeholder="Ho Ten" required><br>
+                    <label for="ib cmnd">CMND :</label>
+                    <input type="text" name="txtCMND" id="txtCMND" placeholder="CMND" required><br>
+                    <label for="ib DC">DIA CHI :</label>
+                    <input type="text" name="txtDC" id="txtDC" placeholder="dia chi thuong tru" required><br>
+                    <label for="ib Email">Email :</label>
+                    <input type="text" name="txtEmail" id="txtEmail" placeholder="Email" required><br>
+                    <input type="submit" value="Dang ki">
+
+                </fieldset>
+            </form>
+        </section>
+        </div>
+        <div class="clear"></div>
+        <footer></footer>
+    </div>
+</body>
+</html>
